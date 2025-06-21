@@ -1,0 +1,121 @@
+/* Style the entire nav bar */
+header{
+    background-image: url(/Users/sumsunga51/Desktop/alx_html_css/css_advanced/Object.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: absolute;
+    background-size:cover;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: transparent;
+}
+
+/* Style the logo */
+nav img {
+  height: 29.46px;
+  width: 167.02px;
+}
+
+/* Remove default list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 53px;
+  height: 15px;
+  width: 234px; /* space between items */
+}
+
+/* Style each list item */
+nav li a {
+  font-family: 'Source Sans Pro', sans-serif; /* ✅ Apply the font */
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* Make the whole page fill the screen and remove default margins */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox centering */
+.center-content {
+  display: flex;
+  flex-direction: column;        /* stack elements vertically */
+  justify-content: center;       /* center vertically */
+  align-items: center;           /* center horizontally */
+  height: 100vh;                 /* full viewport height */
+  text-align: center;
+}
+
+/* Optional styling */
+.center-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.center-content span {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.center-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.smile-row {
+  display: flex;              /* makes child divs go side by side */
+  gap: 40px;                  /* space between the divs */
+  justify-content: center;   /* optional: center the row in the page */
+  padding: 20px;              /* optional spacing around the row */
+  flex-wrap: wrap;           /* allows wrapping on smaller screens */
+}
+
+.smile-row div {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.tag-row {
+  display: flex;        /* makes spans appear in a row */
+  gap: 15px;            /* space between spans */
+  justify-content: center; /* optional: center horizontally */
+}
+
+.tag-row span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  background-color: #C271FF;   /* Subtle gray-blue background */
+  color: white;                /* White text */
+  font-size: 18px;             /* Medium text */
+  padding: 12px 24px;          /* Spacing around text */
+  border: none;                /* No border */
+  border-radius: 22px;         /* Slightly rounded corners */
+  cursor: pointer;             /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
