@@ -1,0 +1,108 @@
+body {
+  display: flex;           /* body becomes a flex container */
+  flex-direction: column;  /* often used for vertical stacking */
+  height: 100vh;           /* ensure full viewport height */
+  margin: 0;
+}
+
+main {
+  display: flex;    
+  flex-direction: row       /* main becomes its own flex container */
+  justify-content: space-between;
+  flex: auto;
+  
+                             /* main takes up the remaining vertical space */
+}
+
+article {
+    flex: 2;
+    overflow-y: auto
+  
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto
+}
+
+.logo {
+  font-size: 2rem;       /* Make it bigger */
+  font-weight: bold;     /* Make it stand out */
+  padding-right: 1rem;   /* Add spacing from next item */
+}
+
+/* Style the logo (uses Unicode symbol) */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  padding-right: 1rem;
+}
+
+/* Header title */
+header h1 {
+  font-size: 1.8rem;
+  color: #222;
+  margin: 0;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Article content */
+article {
+  font-family: sans-serif;
+  line-height: 1.6;
+  border-right: 1px solid #ccc;
+}
+
+/* Aside block */
+aside {
+  font-family: sans-serif;
+  font-size: 0.95rem;
+  border-left: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* removes double borders */
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 2px solid #000; /* thick black border */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+
